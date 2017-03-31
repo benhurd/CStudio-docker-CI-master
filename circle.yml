@@ -4,8 +4,10 @@
 deployment:
   dockerhub:
     branch: master
-    commands:
-      - $DOCKER_HUB_TRIGGER
+    # commands:
+    #   - $DOCKER_HUB_TRIGGER
+    heroku:
+      appname: triangleci
 
 test:
   override:    
