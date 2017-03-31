@@ -13,5 +13,9 @@ app.get('/', function(req, res) {
   });
 });
 
-app.listen(8080);
+var port = process.env.PORT || 5000;
+
+app.listen(port, function(err){
+    console.log('server started on port '+ port);
+});
 module.exports.getApp = app;
